@@ -1,0 +1,591 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: inter;
+}
+
+nav {
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+
+}
+
+.main-nav {
+  /* position: fixed; */
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  color: #4f4f4f;
+}
+
+.links > a {
+  color: #4f4f4f;
+  margin-inline: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.links > button {
+  font-style: italic;
+}
+.alert-div {
+  display: inline;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hero {
+  display: flex;
+  width: 90vw;
+  align-items: center;
+  text-align: center;
+}
+.left-section {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 60%;
+  padding: 15px;
+}
+
+.heading {
+  position: relative;
+  width: 85%;
+  font-weight: 700;
+  font-size: 50px;
+  color: rgb(43, 47, 52);
+}
+
+.sub-para {
+  width: 75%;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(89, 89, 89);
+  margin-top: 20px;
+}
+
+.header-content-wrapper {
+  width: 88%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 40px;
+  margin: 20px 0px;
+  background: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(226, 226, 226);
+  border-image: initial;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.header-content-div {
+  margin-inline: 8px;
+}
+
+.header-content-heading {
+  margin: 8px;
+}
+
+.made-by {
+  text-align: center;
+  color: rgb(82, 82, 82);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  margin-bottom: -10px;
+  background: rgb(255, 255, 255);
+  border-radius: 23px;
+}
+
+.right-section {
+  align-items: center;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 28px 18px 16px;
+  border-radius: 25px;
+  box-shadow: 
+  5px 5px 20px rgba(255, 148, 10, 0.1), 
+  -5px -5px 20px rgba(128, 0, 128, 0.1),
+  -5px 5px 20px rgba(255, 148, 10, 0.1), 
+ 
+  5px -5px 20px rgba(128, 0, 128, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-heading {
+  width: 90%;
+  text-align: center;
+}
+.form-sub-heading {
+  width: 90%;
+  color: #667085;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.form-footer {
+  color: #667085;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.right-section > form {
+  width: 90%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-fields {
+  align-items: center;
+  display: flex;
+  margin: auto;
+  background-color: transparent;
+  width: 100%;
+  height: 45px;
+}
+
+.form-fields > input {
+  flex: 1; 
+  width: 80%;
+  border: none;
+  padding-inline: 10px;
+}
+
+.apply-button {
+  text-align: center;
+  border: none;
+  align-items: center;
+  background: linear-gradient(315deg, #992fed, #2f80ed);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  margin: 16px 0;
+  padding: 8px 24px !important;
+  width: 100%;
+}
+
+/* THIS IS FOR COURSE STYLE */
+.course {
+  padding: 40px;
+  text-align: center;
+  background-color: #ecf8ff;
+}
+
+.course-headings p {
+  font-size: 20px;
+  font-style: italic;
+  color: #2f80ed;
+  margin-bottom: 10px;
+}
+
+.course-headings h3 {
+  font-size: 28px;
+  color: #2f80ed;
+  margin-bottom: 30px;
+}
+
+.different-courses {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Styles for each course card */
+.beginner,
+.intermediate {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.beginner img,
+.intermediate img {
+  max-width: 100%;
+  height: auto;
+}
+
+.key-roles {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.blue-back {
+  background-color: #e0f3ff;
+  margin-left: 10px;
+  color: #1d78b0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.blue-yellow {
+  background-color: #ffeed8;
+  margin-left: 10px;
+  color: #a46a21;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.course-para-subheading {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #888;
+}
+
+table {
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #48494c;
+  vertical-align: top;
+  border-bottom: 1px solid #cccccc;
+}
+
+.course-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.course-buttons button {
+  margin-right: 10px;
+}
+
+/******************************************STYLE FOR PARTNERS SECTION STARTS********************* */
+.partners {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.first-mini-heading {
+  font-size: 18px;
+  color: #2f80ed;
+}
+
+.partner-main-heading h3 {
+  font-size: 24px;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.partner-para {
+  font-size: 16px;
+  color: #888;
+}
+
+.partner-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.partner-images img {
+  width: 15%;
+
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+}
+
+.placement-report {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .first-mini-heading {
+    font-size: 16px;
+  }
+
+  .partner-main-heading h3 {
+    font-size: 20px;
+  }
+
+  .partner-para {
+    font-size: 14px;
+  }
+
+  .partner-images img {
+    width: 20%;
+    margin: 10px;
+  }
+}
+
+/******************************************STYLE FOR PARTNERS SECTION ENDS********************* */
+/* .wall-of-love{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+} */
+.placed-heading{
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  margin: 20px 0;
+}
+.placed-para{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 16px;
+  color: #888;
+}
+
+
+
+.card-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.card-wrapper .card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-wrapper .profile-img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.card-wrapper .profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-wrapper .details {
+  margin-left: 15px;
+}
+
+.card-wrapper .name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.card-wrapper .profile {
+  font-size: 14px;
+  color: #777;
+}
+
+.card-wrapper .card-content {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.card-wrapper .card-bottom {
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.only-web {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .only-web {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .studentwall-content-wrapper.only-web {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-wrapper {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+}
+/******************************************STYLE FOR WALL OF LOVE OR PLACED STORIES SECTION ENDS********************* */
+
+
+
+@media screen and (max-width: 768px) {
+  .beginner {
+    padding: 15px;
+  }
+
+  .key-roles {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blue-back {
+    margin-top: 5px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  table {
+    margin-top: 10px;
+  }
+
+  table td {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .course {
+    padding: 20px;
+  }
+
+  .different-courses {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beginner,
+  .intermediate {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-section {
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .sub-para {
+    font-size: 14px;
+  }
+
+  .header-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .header-content-heading {
+    font-size: 20px;
+  }
+
+  .header-content-subheading {
+    font-size: 14px;
+  }
+
+  .made-by {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links > a {
+    margin-bottom: 10px;
+  }
+
+  .alert-div {
+    display: none;
+  }
+
+  .heading {
+    position: relative;
+    width: 30%;
+    text-justify: auto;
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(43, 47, 52);
+  }
+}
